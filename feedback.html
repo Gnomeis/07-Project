@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Doggo! A website to help you find the perfect dog!" />
+    <meta name="author" content="Simon Davis" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doogo!: Feedback Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="gallery/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- start the page header -->
+    <header>
+        <img src="gallery/pawprint.jpg" alt="pawprint" width="50" height="50">
+        <span>Doggo!</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Breeds.html">Doggos!</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li class="active"><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!-- start the page main -->
+    <main>
+        <h1>Feedback</h1>
+        <form method="get" class="feedbackForm" action="thanks.html">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label>First Name*<input type="text" name="fname" required placeholder="Your First Name" class="blockForFeedback"></label>
+                <label>Last Name*<input type="text" name="lname" required placeholder="Your Last Name" class="blockForFeedback"></label>
+                <label>Phone Number*<input type="tel" name="phone" required placeholder="123-456-7890" class="blockForFeedback"></label>
+                <label>Email*<input type="email" name="email" required placeholder="username@workspace.org" class="blockForFeedback"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Other Info (not required)</legend>
+                Gender<ul>
+                    <li><label  class="blockForFeedback">Male<input type="radio" name="gender"></label></li>
+                    <li><label  class="blockForFeedback">Female<input type="radio" name="gender"></label></li>
+                    <li><label  class="blockForFeedback">Walmart Bag<input type="radio" name="gender"></label></li>
+                    <li><label  class="blockForFeedback">Other<input type="radio" name="gender"></label></li>
+                    <li><label  class="blockForFeedback">Perfer Not To Say<input type="radio" name="gender"></label></li>
+                </ul>
+                <label>Age<input type="text" name="age" placeholder="Age"></label>
+                <label class="blockForFeedback">How Do You Want Your Response to Be Visible to Others
+                    <select name="visibility">
+                        <option value="select">Please Select</option>
+                        <option value="private">Private (Only Website Editors will see and be able to act on your feedback)</option>
+                        <option value="anonymousPrivate">Anonymous Private (Editors will only see your feedback with no name provided)</option>
+                        <option value="anonymous">Anonymous (Others can see your feedback without seeing your name)</option>
+                        <option value="open">Open (Everyone can see your feedback with your name attached)</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Feedback</legend>
+
+                What animals do you like<ul>    
+                    <li><label class="blockForFeedback">Dogs<input type="checkbox" name="dogs"></label></li>
+                    <li><label class="blockForFeedback">Cats<input type="checkbox" name="cats"></label></li>
+                    <li><label class="blockForFeedback">Birds<input type="checkbox" name="bird"></label></li>
+                    <li><label class="blockForFeedback">Other<input type="text" name="otherTypeOfAnimal"></label></li>
+                </ul>
+                <label class="blockForFeedback">Feedback*<textarea name="feedback" required placeholder="Write your feedback here"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit Form">
+        </form>
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2026 Doggo! &bull; Simon Davis &bull; Web Essentials</p>
+    </footer>
+</body>
+
+</html>

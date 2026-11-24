@@ -1,0 +1,240 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: "Fredoka", sans-serif;
+}
+
+header {
+    background: #efefef;
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #5e5642;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+img.hero {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+@media only screen and (max-width: 800px) {
+
+    nav {
+        background-color: #DDC284;
+    }
+
+    nav ul {
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav a {
+        padding: .83rem;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #5e5642;
+        font-size: 1.1rem;
+        font-weight: 700;
+        border: solid 1px #333;
+    }
+
+    nav li a:hover {
+        color: #ffffff;
+    }
+
+    nav li.active a {
+        background-color: #5e5642;
+        color: #DDC284;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+
+    nav {
+        background-color: #DDC284;
+    }
+
+    nav ul {
+        margin: 0;
+        list-style-type: none;
+        padding: 0 10px;
+
+        display: flex;
+    }
+
+    nav a {
+        padding: .83rem 1rem;
+        display: block;
+        text-decoration: none;
+        color: #5e5642;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    nav li a:hover {
+        color: #ffffff;
+    }
+
+    nav li.active a {
+        background-color: #5e5642;
+        color: #DDC284;
+    }
+}
+
+figure.homepageimg {
+    float: right;
+    width: 40%;
+}
+
+figure.homepageimg img {
+    width: 100%;
+    height: auto;
+}
+
+figure.homepageimg figcaption {
+    text-align: center;
+    font-size: 1rem;
+}
+
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #777c89;
+}
+
+main h2 {
+    color: #5e5642;
+}
+
+main p {
+    margin: 0;
+    color: #333;
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #efefef;
+}
+
+main dl dt {
+    color: #777c89;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #5e5642;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: black;
+}
+
+main em {
+    font-weight: 300;
+}
+
+main address {
+    font-style: normal;
+    background-color: #DDC284;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 3px double #85a1de;
+    margin: 3px;
+    clear: both;
+}
+
+main a {
+    color: #5e5642;
+}
+
+main a:hover {
+    color: #777c89;
+}
+
+fieldset {
+    border-color: #85a1de;
+    color: #5e5642;
+    border-radius: 5px;
+}
+
+.blockForFeedback {
+    display: block;
+    margin-bottom: 1%;
+}
+
+.feedbackForm input {
+    border-radius: 5px;
+    border-style: solid;
+}
+
+fieldset legend {
+    color: #85a1de;
+}
+
+.feedbackForm textarea {
+    height: 6rem;
+    width: 99.5%;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figure figcaption {
+    text-align: center;
+    font-size: 1rem;
+}
+
+div.gallery figure img:hover {
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 40%);
+}
+
+footer {
+    background-color: #eaeaea;
+    background-image: linear-gradient(15deg, #9a9a9a, #000000);
+    text-align: center;
+    padding: 1rem 0;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    color: #85a1de;
+    letter-spacing: 3px;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
